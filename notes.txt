@@ -38,3 +38,5 @@ Noteworthy Points
  *********************************************************************
 useState
  - When updating a state based on the previous state value, pass in a function to the state setter.
+ - A state variable can be a number, string, boolean, an object or even an array.
+ 
