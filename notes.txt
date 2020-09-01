@@ -39,4 +39,19 @@ Noteworthy Points
 useState
  - When updating a state based on the previous state value, pass in a function to the state setter.
  - A state variable can be a number, string, boolean, an object or even an array.
- 
+ - The setter function provides useState Hook doesn't automatically   merge an update object, you have to manually update the object and pass the value to the setter function. There is a similar senario when updating arrays.
+
+ Summary:
+  * The useState Hook lets you add a state to a functional component
+  * It creates a single piece of state
+  * In classes, the state is always and object
+  * With useState Hook, the state doesn't have to be an object
+  * The useStae Hook returns and array with 2 elements
+  * The first element is the  current value of the state, and the second element is a state setter function
+  * If new state value depends on previous state value, you need to pass a function to the setter function
+  * When dealing with objects or arrays, make sure to spread your state variable and then call the setter function
+
+ *********************************************************************
+ ex. HookCounter.js, HookCounterTwo.js, HookCounterThree.js and HookCounterFour.js
+ *********************************************************************
+
