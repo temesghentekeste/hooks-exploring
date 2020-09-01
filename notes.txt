@@ -32,6 +32,9 @@ Noteworthy Points
  *********************************************************************
  Rules of Hooks
   1. "Only call Hooks at the top level"
-  2. Don't call Hooks inside loops, conditions, or nested functions
+    - Don't call Hooks inside loops, conditions, or nested functions
+  2. "Only call Hooks from React Functions"
+    - Call them within React functional components and not just regular JavaScript functions
  *********************************************************************
-
+useState
+ - When updating a state based on the previous state value, pass in a function to the state setter.
