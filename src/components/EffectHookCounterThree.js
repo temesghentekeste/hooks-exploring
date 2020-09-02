@@ -13,7 +13,13 @@ function EffectHookCounterThree() {
  
   useEffect(() => {
     console.log('useEffect called...');
-    window.addEventListener('mouseover', logMousePosition);
+    window.addEventListener('mousemove', logMousePosition);
+
+    return () => {
+      console.log('Component unmounting code...')
+      window.removeEventListener('mousemove', logMousePosition);
+    } 
+      
   }, []);
 
   return (
