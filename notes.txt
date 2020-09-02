@@ -68,4 +68,6 @@ Tip
   If you’re familiar with React class lifecycle methods, you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
 
 Hooks Optimazation
- You can tell React to skip applying an effect if certain values haven’t changed between re-renders. To do so, pass an array as an optional second argument to useEffect:
+ You can tell React to skip applying an effect if certain values haven’t changed between re-renders. To do so, pass an array as an optional second argument to useEffect.
+
+We can mimic componentDidMount using useEffect by passing in an empty array as the second argument of useEffect.
