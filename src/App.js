@@ -11,12 +11,14 @@ import EffectHookFour from './components/EffectHookFour';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 function App() {
   return (
     <div className="App">
-      <DataFetching/>
+      <DataFetchingTwo/>
      {/* 
+      <DataFetching/>
       <IntervalClassCounter/>
       <IntervalHookCounter/>
       <EffectHookFour/>
