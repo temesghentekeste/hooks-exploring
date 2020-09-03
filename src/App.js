@@ -14,14 +14,16 @@ import DataFetching from './components/DataFetching';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import ContextHook from './components/ContextHook';
 import UseReducerCounterOne from './components/UseReducerCounterOne';
+import UseReducerCounterTwo from './components/UseReducerCounterTwo';
 
 export const userContext = React.createContext();
 export const blogContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <UseReducerCounterOne/>
+      <UseReducerCounterTwo/>
      {/* 
+      <UseReducerCounterOne/>
       <userContext.Provider value={'temesghen'}>
         <blogContext.Provider value={'uandiprogramming.blogspot.com'}>
           <ContextHook />
