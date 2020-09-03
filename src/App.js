@@ -13,18 +13,20 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import ContextHook from './components/ContextHook';
+import UseReducerCounterOne from './components/UseReducerCounterOne';
 
 export const userContext = React.createContext();
 export const blogContext = React.createContext();
 function App() {
   return (
     <div className="App">
+      <UseReducerCounterOne/>
+     {/* 
       <userContext.Provider value={'temesghen'}>
         <blogContext.Provider value={'uandiprogramming.blogspot.com'}>
           <ContextHook />
         </blogContext.Provider>
       </userContext.Provider>
-     {/* 
       <DataFetchingTwo/>
       <DataFetching/>
       <IntervalClassCounter/>

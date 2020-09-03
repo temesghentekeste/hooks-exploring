@@ -92,3 +92,20 @@ More concepts:
   - It is possible to have multiple useEffect implementations and our code will be clean and organized. Ex. React doc
 
 **********************************************************************
+useReducer
+ - It is a Hook used for state management
+ - Alternative to useState
+ - useState is built using useReducer
+ - Similarity betweeen reduce and useReducer
+ * reduce in JavaScript; useReducer in React
+ * Implementatin: 
+    - array.reduce(reducer, initialValue)
+    - useReducer(reducer, initialState)
+ * Simplest from
+    - singleValue = array.reduce(accumulator, itemValue)
+    - newState = reducer(currentState, action)
+    * The action parameter is what dictactes the state transition from currentState to a newState
+ * Return value
+    - reduce method returns a single value
+    - useReducer returns a pair of values, [newState, dispatch]
+    * The dispatch method is basically used to specify the action
