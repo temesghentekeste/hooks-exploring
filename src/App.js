@@ -8,12 +8,16 @@ import EffectHookCounterOne from './components/EffectHookCounterOne';
 import EffectHookCounterTwo from './components/EffectHookCounterTwo';
 import EffectHookCounterThree from './components/EffectHookCounterThree';
 import EffectHookFour from './components/EffectHookFour';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './components/IntervalHookCounter';
 
 function App() {
   return (
     <div className="App">
-      <EffectHookFour/>
+      <IntervalClassCounter/>
+      <IntervalHookCounter/>
      {/* 
+      <EffectHookFour/>
       <EffectHookCounterThree/>
       <EffectHookCounterTwo/>
       <EffectHookCounterOne/>
