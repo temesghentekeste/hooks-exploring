@@ -114,3 +114,11 @@ useReducer
     - useReducer - Local state management
     - Share state between components - Global state management
     - useReducer + useContext
+**********************************************************************
+                          useState      vs           useReducer
+**********************************************************************
+Type of State:............Number, String, Boolean ....Object, array
+No. of state transition:..One or Two .................Too many
+Related state transition:..No ........................Yes
+Business Logic:............No business logic .....Complex bus. logic
+Local vs Global............Local.......................Global
