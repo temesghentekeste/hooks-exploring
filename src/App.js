@@ -3,6 +3,7 @@ import './App.css';
 import ComponentAReducerWzContext from './components/ComponentAReducerWzContext';
 import ComponentBReducerWzContext from './components/ComponentBReducerWzContext';
 import ComponentCReducerWzContext from './components/ComponentCReducerWzContext';
+import DataFetchingOne from './components/DataFetchingOne';
 
 
 export const CountContext = React.createContext();
@@ -23,14 +24,17 @@ const reducer = (state, action) => {
 function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
-    <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
-      <div className="App">
-        Count - {count}
-        <ComponentAReducerWzContext/>
-        <ComponentBReducerWzContext/>
-        <ComponentCReducerWzContext/>
-      </div>
-    </CountContext.Provider>
+    // <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+    //   <div className="App">
+    //     Count - {count}
+    //     <ComponentAReducerWzContext/>
+    //     <ComponentBReducerWzContext/>
+    //     <ComponentCReducerWzContext/>
+    //   </div>
+    // </CountContext.Provider>
+    <div className="App"  >
+      <DataFetchingOne/>
+    </div>
   );
 }
 
