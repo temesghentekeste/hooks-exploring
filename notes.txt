@@ -109,3 +109,8 @@ useReducer
     - reduce method returns a single value
     - useReducer returns a pair of values, [newState, dispatch]
     * The dispatch method is basically used to specify the action
+
+  UseReducer with useContext
+    - useReducer - Local state management
+    - Share state between components - Global state management
+    - useReducer + useContext
