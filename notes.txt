@@ -122,3 +122,24 @@ No. of state transition:..One or Two .................Too many
 Related state transition:..No ........................Yes
 Business Logic:............No business logic .....Complex bus. logic
 Local vs Global............Local.......................Global
+**********************************************************************
+
+Performance Optimazation
+ex. ParentComponent.js ===> inside App.js
+    It is a container for other components: Title.js, Count.js, and Button.js, 
+
+To imporve performance we have to restrict re-renders to only components that needs re-render.
+
+To achive such kind of performance boost we have to use React.memo
+
+React.memo is a HOC that prevents a functional component from bieng rerendered if its props or state did not change.
+
+Reac.memo has been a feature since React version 16.6
+
+useCallback Hook
+useCallback is a hook that is will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+
+It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecssary renders.
+
+
+

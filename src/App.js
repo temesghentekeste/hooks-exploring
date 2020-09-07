@@ -5,6 +5,7 @@ import ComponentBReducerWzContext from './components/ComponentBReducerWzContext'
 import ComponentCReducerWzContext from './components/ComponentCReducerWzContext';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwoUseReducer from './components/DataFetchingTwoUseReducer';
+import ParentComponent from './components/ParentComponent';
 
 
 export const CountContext = React.createContext();
@@ -34,8 +35,9 @@ function App() {
     //   </div>
     // </CountContext.Provider>
     
-    <div className="App"  >
-      <DataFetchingTwoUseReducer/>
+    <div className="App">
+      <ParentComponent/>
+      {/* <DataFetchingTwoUseReducer/> */}
       {/* <DataFetchingOne/> */}
     </div>
   );
